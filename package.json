@@ -1,8 +1,30 @@
 {
   "name": "copy-element",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Copy to clipboard element",
+  "keywords": [
+    "copy",
+    "clipboard"
+  ],
+  "author": "geduramc",
+  "homepage": "https://github.com/geduramc/copy-element#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geduramc/copy-element"
+  },
   "type": "module",
+  "main": "./dist/copy-element.cjs",
+  "module": "./dist/copy-element.js",
+  "exports": {
+    ".": {
+			"import": "./dist/copy-element.js",
+			"require": "./dist/copy-element.cjs"
+		}
+  },
+  "files": [
+		"dist"
+	],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -19,6 +41,9 @@
     },
     "extends": [
       "./node_modules/ts-standard/eslintrc.json"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/strict-boolean-expressions": "off"
+    }
   }
 }
