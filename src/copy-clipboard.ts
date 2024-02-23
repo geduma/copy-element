@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
 const copyToClipboard = async (value: string): Promise<boolean> => {
   if (!navigator.clipboard) {
     const textArea = document.createElement('textarea')
