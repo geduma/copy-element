@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/geduramc/image/upload/s--cPmzbt9v--/v1707948987/geduramc/gfmc-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/geduramc/image/upload/s--3s6hn8F9--/v1707948987/geduramc/gfmc-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/geduramc/image/upload/s--yoJRYr22--/v1707948986/geduramc/gfmc-favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Element</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Copy to clipboard</h1>
+      <h4><a href="https://geduramc.com" target="_blank">By @geduramc</a></h4>
+      <div class="test-element">
+        <input type="text" value="Lorem Ipsum">
+        <copy-clipboard theme="dark" tooltip-position="right"></copy-clipboard>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      import { copy } from '/src/main.ts'
+      document.getElementsByTagName('copy-clipboard')[0].addEventListener('click', () => {
+        copy(document.getElementsByTagName('input')[0].value)
+      })
+    </script>
+  </body>
+</html>
