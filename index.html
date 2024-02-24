@@ -20,9 +20,8 @@
     </div>
     <script type="module" src="/lib/copy-element.js"></script>
     <script type="module">
-      import { copy } from '/lib/copy-element.js'
       document.getElementsByTagName('copy-clipboard')[0].addEventListener('click', () => {
-        copy(document.getElementsByTagName('input')[0].value)
+        copyToClipboard(document.getElementsByTagName('input')[0].value)
       })
     </script>
   </body>
