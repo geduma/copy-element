@@ -1,11 +1,12 @@
 {
-  "name": "@geduramc/copy-element",
+  "name": "@geduramc/copy-clipboard-element",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "Copy to clipboard element",
   "keywords": [
     "copy",
-    "clipboard"
+    "clipboard",
+    "copy-to-clipboard"
   ],
   "author": "geduramc",
   "homepage": "https://github.com/geduramc/copy-element#readme",
