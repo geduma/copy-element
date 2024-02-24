@@ -1,4 +1,4 @@
-const copyToClipboard = async (value: string): Promise<boolean> => {
+const copyToClipboard = (value: string) => {
   if (!navigator.clipboard) {
     const textArea = document.createElement('textarea')
     textArea.value = value
@@ -11,9 +11,7 @@ const copyToClipboard = async (value: string): Promise<boolean> => {
     textArea.select()
     document.execCommand('copy')
     textArea.remove()
-  } else await navigator.clipboard.writeText(value)
-
-  return true
+  } else navigator.clipboard.writeText(value)
 }
 
 const createButtonElement = (theme: string): HTMLElement => {

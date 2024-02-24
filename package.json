@@ -1,7 +1,7 @@
 {
-  "name": "copy-element",
+  "name": "@geduramc/copy-element",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Copy to clipboard element",
   "keywords": [
     "copy",
@@ -14,20 +14,24 @@
     "url": "https://github.com/geduramc/copy-element"
   },
   "type": "module",
-  "main": "./dist/copy-element.cjs",
-  "module": "./dist/copy-element.js",
+  "main": "./lib/copy-element.cjs",
+  "module": "./lib/copy-element.js",
   "exports": {
     ".": {
-			"import": "./dist/copy-element.js",
-			"require": "./dist/copy-element.cjs"
-		}
+      "import": "./lib/copy-element.js",
+      "require": "./lib/copy-element.cjs"
+    }
   },
   "files": [
-		"dist"
-	],
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "build:lib": "tsc && vite build && cp -r ./dist ./lib",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -43,7 +47,9 @@
       "./node_modules/ts-standard/eslintrc.json"
     ],
     "rules": {
-      "@typescript-eslint/strict-boolean-expressions": "off"
+      "@typescript-eslint/strict-boolean-expressions": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-floating-promises": "off"
     }
   }
 }
