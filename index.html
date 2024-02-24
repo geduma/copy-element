@@ -18,9 +18,9 @@
         <copy-clipboard theme="dark" tooltip-position="right"></copy-clipboard>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/lib/copy-element.js"></script>
     <script type="module">
-      import { copy } from '/src/main.ts'
+      import { copy } from '/lib/copy-element.js'
       document.getElementsByTagName('copy-clipboard')[0].addEventListener('click', () => {
         copy(document.getElementsByTagName('input')[0].value)
       })
