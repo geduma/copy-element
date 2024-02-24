@@ -13,6 +13,14 @@ const copy = (text: any) => {
   }, 1000)
 }
 
+declare global {
+  interface Window {
+    copyToClipboard: (text: any) => void
+  }
+}
+
+window.copyToClipboard = copy
+
 export {
   copy
 }
