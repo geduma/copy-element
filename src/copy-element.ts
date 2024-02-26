@@ -3,7 +3,9 @@ import { createButtonElement } from './copy-clipboard'
 export class CopyElement extends HTMLElement {
   constructor () {
     super()
+  }
 
+  connectedCallback () {
     const btn = createButtonElement(this.theme)
     this.appendChild(btn)
   }
