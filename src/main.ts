@@ -1,7 +1,7 @@
 import { CopyElement } from './copy-element'
 import { copyToClipboard, createTooltipElement } from './copy-clipboard'
 
-customElements.define('copy-clipboard', CopyElement)
+window.customElements.define('copy-clipboard', CopyElement)
 
 const copy = (text: any) => {
   copyToClipboard(text)
@@ -17,6 +17,10 @@ declare global {
   interface Window {
     copyToClipboard: (text: any) => void
   }
+}
+
+declare module '@geduramc/copy-clipboard-element' {
+  export function copy (text: string): void
 }
 
 window.copyToClipboard = copy

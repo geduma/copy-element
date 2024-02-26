@@ -40,3 +40,11 @@ div.links {
   justify-content: center;
   margin-bottom: 1rem;
 }
+
+a > img:hover {
+  opacity: .5;
+}
+
+a > img:active {
+  opacity: .2;
+}

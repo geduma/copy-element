@@ -1,7 +1,7 @@
 {
   "name": "@geduramc/copy-clipboard-element",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Copy to clipboard element",
   "keywords": [
     "copy",
@@ -15,14 +15,8 @@
     "url": "https://github.com/geduramc/copy-element"
   },
   "type": "module",
-  "main": "./lib/copy-element.cjs",
-  "module": "./lib/copy-element.js",
-  "exports": {
-    ".": {
-      "import": "./lib/copy-element.js",
-      "require": "./lib/copy-element.cjs"
-    }
-  },
+  "main": "./lib/copy-element",
+  "types": "./lib/copy-element",
   "files": [
     "lib"
   ],
@@ -50,7 +44,8 @@
     "rules": {
       "@typescript-eslint/strict-boolean-expressions": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/no-floating-promises": "off"
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/no-useless-constructor": "off"
     }
   }
 }
