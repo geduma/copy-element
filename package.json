@@ -1,7 +1,7 @@
 {
   "name": "@geduramc/copy-clipboard-element",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Copy to clipboard element",
   "keywords": [
     "copy",
@@ -16,7 +16,7 @@
   },
   "type": "module",
   "main": "./lib/copy-element",
-  "types": "./lib/copy-element",
+  "types": "./lib/copy-element.d.ts",
   "files": [
     "lib"
   ],
@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:lib": "tsc && vite build && cp -r ./dist ./lib",
+    "build:lib": "rm -rf lib/ && tsc && vite build && cp -r ./dist ./lib && cp -r ./src/types.d.ts ./lib/copy-element.d.ts",
     "preview": "vite preview"
   },
   "devDependencies": {
