@@ -48,3 +48,13 @@ a > img:hover {
 a > img:active {
   opacity: .2;
 }
+
+div.demo {
+  margin-top: 2rem;
+}
+
+div.demo > input {
+  padding: 8px;
+  border-radius: 4px;
+  border: solid .5px #FFF;
+}
