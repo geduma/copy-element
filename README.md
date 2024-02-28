@@ -77,5 +77,5 @@ copy('Lorem Ipsum')
 <br>
 
 <p align="center">
-  By @geduramc
+  <a href="https://geduramc.com">By @geduramc</a>
 </p>
