@@ -17,24 +17,53 @@
 
 Package install
 ```shell
-npm install @geduramc/copy-element
+npm i @geduramc/copy-clipboard-element
 ```
 
 CDN
 ```html
-<script src="https://unpkg.com/@geduramc/copy-element@1.0.5/lib/copy-element.js"></script>
+<script type="module" src="https://unpkg.com/@geduramc/copy-clipboard-element@1.0.5/lib/copy-element"></script>
 ```
 
 ## Usage
 
 ```html
-<copy-clipboard theme="dark" tooltip-position="right"></copy-clipboard>
+<copy-clipboard icon-theme="dark" tooltip-position="right"></copy-clipboard>
 ```
 ```js
-import { copy } from '@geduramc/copy-element'
+import { copy } from '@geduramc/copy-clipboard-element'
 
 copy('Lorem Ipsum')
 ```
+
+## Attributes
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>type</th>
+      <th>default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>icon-theme</td>
+      <td>'light' | 'dark'</td>
+      <td>'light'</td>
+    </tr>
+    <tr>
+      <td>tooltip-position</td>
+      <td>'top' | 'right' | 'bottom' | 'left'</td>
+      <td>'right'</td>
+    </tr>
+    <tr>
+      <td>tooltip-text</td>
+      <td> string </td>
+      <td>'copied!'</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributing
 
