@@ -22,7 +22,7 @@ npm i @geduramc/copy-clipboard-element
 
 CDN
 ```html
-<script type="module" src="https://unpkg.com/@geduramc/copy-clipboard-element@1.0.5/lib/copy-element"></script>
+<script type="module" src="https://unpkg.com/@geduramc/copy-clipboard-element@latest/lib/copy-element"></script>
 ```
 
 ## Usage
