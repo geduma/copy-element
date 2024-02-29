@@ -3,7 +3,9 @@ class CopyElement extends HTMLElement {
 
   constructor () {
     super()
+  }
 
+  connectedCallback () {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     this.button = this.createButtonElement()
     shadowRoot.appendChild(this.button)
@@ -17,8 +19,6 @@ class CopyElement extends HTMLElement {
       }, 1000)
     })
   }
-
-  connectedCallback () { }
 
   get iconTheme (): string {
     return this.getAttribute('icon-theme') ?? 'light'
