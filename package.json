@@ -8,11 +8,11 @@
     "clipboard",
     "copy-to-clipboard"
   ],
-  "author": "geduramc",
-  "homepage": "https://github.com/geduramc/copy-element#readme",
+  "author": "geduma",
+  "homepage": "https://github.com/geduma/copy-element#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geduramc/copy-element"
+    "url": "https://github.com/geduma/copy-element"
   },
   "type": "module",
   "main": "./lib/copy-element",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "ts-standard": "^12.0.2",
     "typescript": "^5.2.2",
-    "vite": "^5.1.0"
+    "vite": "^7.1.6"
   },
   "eslintConfig": {
     "parserOptions": {
