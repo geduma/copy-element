@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://copy.geduramc.com">🔗 Demo</a>
+  <a href="https://copy.geduma.com">🔗 Demo</a>
 </p>
 
 ## Installation
@@ -77,5 +77,5 @@ copy('Lorem Ipsum')
 <br>
 
 <p align="center">
-  <a href="https://geduramc.com">By @geduramc</a>
+  <a href="https://geduma.com">by @geduma</a>
 </p>

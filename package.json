@@ -8,11 +8,11 @@
     "clipboard",
     "copy-to-clipboard"
   ],
-  "author": "geduramc",
-  "homepage": "https://github.com/geduramc/copy-element#readme",
+  "author": "geduma",
+  "homepage": "https://github.com/geduma/copy-element#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geduramc/copy-element"
+    "url": "https://github.com/geduma/copy-element"
   },
   "type": "module",
   "main": "./lib/copy-element",
